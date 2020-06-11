@@ -1,9 +1,13 @@
 import axios from "axios";
 // Different action functions.
-import {ADD_POST, UPDATE_POST, DELETE_POST, ADD_COMMENT, DELETE_COMMENT, LOAD_TITLES, 
+import {ADD_POST, UPDATE_POST, DELETE_POST, ADD_COMMENT, DELETE_COMMENT, LOAD_TITLES,
         LOAD_SINGLE_POST, SHOW_ERROR, ADD_TITLE, UPDATE_TITLE, UPDATE_VOTE_COUNT} from "./actionTypes";
 
-const BASE_URL = "http://localhost:5000/api/posts";
+// Testing Environment
+// const BASE_URL = "http://localhost:5000/api/posts";
+
+// Deployment Environment
+const BASE_URL = "https://microblog-server.herokuapp.com/api/posts";
 
 export function addPost (formData) {
   return {
@@ -147,7 +151,7 @@ export function updatePostToAPI(formData) {
       let res = await axios.put(
           `${BASE_URL}/${formData.id}`, formData);
 
-      // Update title 
+      // Update title
       const {id, title, description} = res.data;
       dispatch(updateTitle({id, title, description}));
 
