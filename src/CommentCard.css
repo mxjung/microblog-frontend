@@ -1,0 +1,36 @@
+.comment-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment-text {
+  margin: 10px 10px 10px 0;
+  text-align: left;
+}
+
+.comment-delete-button {
+  background-color: rgb(253, 104, 104);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 6px 8px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 10px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.comment-delete-button:hover {
+  background-color: rgb(255, 47, 47);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.comment-delete-button:active {
+  background-color: rgb(255, 47, 47);
+  transform: scale(1);
+}

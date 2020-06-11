@@ -1,0 +1,87 @@
+.post-form {
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.post-form-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-buttons {
+  display: flex;
+}
+
+.post-save-button {
+  background-color: rgb(47, 129, 252);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  width: 60px;
+  height: 40px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.post-save-button:hover {
+  background-color: rgb(0, 102, 255);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.post-save-button:active {
+  background-color: rgb(0, 102, 255);
+  transform: scale(1);
+}
+
+.post-cancel-button {
+  background-color: rgb(128, 128, 128);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  width: 60px;
+  height: 40px;
+  margin-top: 5px;
+}
+
+.post-cancel-button:hover {
+  background-color: rgb(104, 104, 104);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.post-cancel-button:active {
+  background-color: rgb(104, 104, 104);
+  transform: scale(1);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  /* Only allow resizing by vertical */
+  resize: vertical;
+}

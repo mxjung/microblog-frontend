@@ -1,0 +1,20 @@
+state = {posts, comments}
+
+posts: {
+          id: {
+            id,
+            title,
+            description,
+            body
+          }
+}
+
+comments: {
+          post.id: {
+                    commentId: commentBody
+          }
+}
+
+// Redux:
+state ={postLists }
+in postDetail, we would have useState (component specific) that contains data given from API call to posts/:id

@@ -1,0 +1,25 @@
+.comment-line {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.comment-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.comment-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.new-comment-form-parent {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.comments {
+  width: 100%;
+}

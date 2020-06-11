@@ -1,0 +1,67 @@
+.postcard {
+  display: flex;
+  align-items: center;
+  width: 220px;
+  border: 1.5px solid rgb(230, 230, 230);
+  border-radius: 5px;
+  padding: 6px 0px 6px 10px;
+  margin-bottom: 10px;
+}
+
+.postcard-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 14px;
+}
+
+.postcard-link {
+  text-decoration: none;
+}
+
+.postcard-title {
+  color: rgb(0, 140, 255);
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.postcard-description {
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.votes {
+  height: fit-content;
+  margin: 10px 0px;
+}
+
+.total-votes {
+  font-size: 14px;
+  margin: 4px 0px;
+}
+
+/* Make clicks inside the button will always be for the button itself  */
+.vote-button > * {
+  pointer-events: none;
+}
+
+.vote-button {
+  border: none;
+}
+
+.vote-button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.vote-button:active {
+  transform: scale(1);
+}
+
+/* Remove highlight from button after press  */
+.vote-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+

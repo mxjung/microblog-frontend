@@ -1,0 +1,131 @@
+.post-details-page {
+  width: 520px;
+}
+
+.post-detail {
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.post-headers {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0px;
+}
+
+.post-title {
+  font-weight: bold;
+  font-size: 30px;
+  width: 400px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.post-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.post-description {
+  font-style: italic;
+  font-size: 18px;
+  margin: 0;
+}
+
+.comment-list {
+  width: 100%;
+}
+
+.post-votes {
+  height: fit-content;
+  margin: 10px 10px 10px 0px;
+}
+
+.post-total-votes {
+  font-size: 20px;
+  margin: 4px 0px;
+}
+
+/* Make clicks inside the button will always be for the button itself  */
+.post-vote-button > * {
+  pointer-events: none;
+}
+
+.post-vote-button {
+  border: none;
+}
+
+.post-vote-button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.post-vote-button:active {
+  transform: scale(1);
+}
+
+/* Remove highlight from button after press  */
+.post-vote-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.edit-post-btn {
+    background-color: rgb(173, 179, 187);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 12px;
+    width: 60px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.edit-post-btn:hover {
+  background-color: rgb(141, 143, 146);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.edit-post-btn:active {
+  background-color: rgb(141, 143, 146);
+  transform: scale(1);
+}
+
+.delete-post-btn {
+  background-color: rgb(253, 104, 104);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 6px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 12px;
+  width: 60px;
+  height: 30px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.delete-post-btn:hover {
+  background-color: rgb(255, 47, 47);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.delete-post-btn:active {
+  background-color: rgb(255, 47, 47);
+  transform: scale(1);
+}
