@@ -67,12 +67,12 @@ function rootReducer(state = INITIAL_STATE, action) {
         ...state,
         titles: {...state.titles, [action.postId]: {...state.titles[action.postId], votes: action.voteAmount}},
         posts: {...copyPostsforVotes}
-      }  
-  
+      }
+
 
     case UPDATE_POST:
       // get back { id, title, description, body, votes } (missing comments)
-      
+
       return {
         ...state,
         posts: {
@@ -85,7 +85,7 @@ function rootReducer(state = INITIAL_STATE, action) {
       }
 
     // ******* look at combining reducers in further studies
-    // ******* formData - give more specific name 
+    // ******* formData - give more specific name
     case ADD_COMMENT:
       return {
         ...state,

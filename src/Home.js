@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import PostList from "./PostList";
-import { useDispatch } from "react-redux";
 import { getTitlesFromAPI } from "./actions";
+import { useDispatch } from "react-redux";
+
 /**
  * Home: Home Component
  *    - Parent: Routes

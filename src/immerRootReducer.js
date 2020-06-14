@@ -7,8 +7,13 @@ import produce from "immer";
 /**
  * state = {posts: {postId1: {id, title, description, body, comments, votes}},...}
  *          titles: {postId1: {id, title, description},...}}
+ *
+ * titles is initially set to have an entry of null. This is because in PostList, we want
+ * the component to know when we have gotten back a response to API to grab all titles. When
+ * the null value is in the state, we know we have not got an API response back. This is used
+ * to show the loading spinner animation
  */
-const INITIAL_STATE = { posts: {}, titles: {} }
+const INITIAL_STATE = { posts: {}, titles: {emtpy: null} }
 
 const immerRootReducer = (state = INITIAL_STATE, action) =>
   produce(state, draft => {
