@@ -34,8 +34,6 @@ Start the application session
 npm start
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
 ## Deployment
 
 Netlify was used to host the React frontend framework. This was done by connecting this github repo to a Netlify domain. The only tricky part to consider during deployment is the BASE_URL used in the application.
